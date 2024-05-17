@@ -51,8 +51,8 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("hyperxfellings")
-                await self.one.join_chat("aboutcutex")
+                await self.one.join_chat("brokenxnetwork")
+                await self.one.join_chat("https://t.me/+b3FFOs5s3uYyMTll")
             except:
                 pass
             assistants.append(1)
@@ -72,8 +72,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("hyperxfellings")
-                await self.one.join_chat("aboutcutex")
+                await self.two.join_chat("brokenxnetwork")
+                await self.one.join_chat("https://t.me/+b3FFOs5s3uYyMTll")
             except:
                 pass
             assistants.append(2)
@@ -114,8 +114,8 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("hyperxfellings")
-                await self.one.join_chat("aboutcutex")
+                await self.four.join_chat("brokenxnetwork")
+                await self.one.join_chat("https://t.me/+b3FFOs5s3uYyMTll")
             except:
                 pass
             assistants.append(4)
@@ -135,8 +135,8 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("hyperxfellings")
-                await self.one.join_chat("aboutcutex")
+                await self.five.join_chat("brokenxnetwork")
+                await self.one.join_chat("https://t.me/+b3FFOs5s3uYyMTll")
             except:
                 pass
             assistants.append(5)
