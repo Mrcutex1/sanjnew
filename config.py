@@ -14,7 +14,7 @@ API_HASH = getenv("API_HASH")
 # ------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","aboutcutex")
+OWNER_USERNAME = getenv("OWNER_USERNAME","SanjayS27")
 # --------------------------------------------------------
 BOT_USERNAME = getenv("BOT_USERNAME" , "Miss_ruhi_bot")
 # --------------------------------------------------------
@@ -35,10 +35,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", -1001899756930))
+LOGGER_ID = int(getenv("LOGGER_ID", -1001914627611))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 5111294407))
+OWNER_ID = int(getenv("OWNER_ID", 6180148187))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -55,7 +55,7 @@ DEEP_API = getenv("DEEP_API")
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Anurag8953/Evoxpro/",
+    "https://github.com/Mrcutex1/sanjnew.git",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
@@ -69,8 +69,8 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/hyperxfellings")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+JoSPjg4d91QzMWNl")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/tamilanexpress")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/tamilanexpresschat")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
