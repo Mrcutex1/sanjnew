@@ -81,52 +81,36 @@ TAGMES = [ "**I'll meet you in our dreams, lover.😘**",
            "**Good night, love. If you have a nightmare, don't call me. I need my beauty sleep! 😴**",
            ]
 
-VC_TAG = [ Good morning to you, my one and only.
-I miss you, and I hope you’re having a wonderful morning.
-Have a wonderful day at work. You’re going to do great!
-Wake up sleeping beauty!
-Do you believe in love at first text?
-The sun rises with your smile.
-Good morning, my love!
-Good morning! How did you sleep?
-Let’s make today memorable.
-Good morning, my timeless love!
-Morning, love! Just wanted to start your day with a smile.
-Enjoy your day, sweetheart.
-Today is a gift. Let’s cherish the present.
-Good morning! How did you sleep?
-The early bird catches the worm! Good morning.
-Have an amazing day!
-Wishing you a successful day!
-Time to seize the day!
-You have the power to make today incredible.
-Rise and shine, my friend!
-I hope your day is filled with joy.
-Every morning is a chance to start anew.
-I have a feeling today is going to be a great day.
-Good morning, my love!
-Good morning! How did you sleep?
-Let’s make today memorable.
-Good morning, my timeless love!
-Morning, love! Just wanted to start your day with a smile.
-Enjoy your day, sweetheart.
-Good morning to the person who never fails to make me smile.
-May this new day bring you endless miracles and blessings!
-Hope your morning just got a little brighter.
-Have a magical morning!
-Wake up, princess.
-Sending you hugs and kisses.
-Hoping your morning is as radiant as you are.
-I think of you every morning and dream of you every night.
-You are my sunshine on a cloudy day.
-Mornings are brighter with you in my life.
-I’m so happy to be your partner in life.
-I love waking up every day next to you.
-Here’s to another day of making memories with you.
-Every morning with you is a blessing.
-I love the smell of coffee in the morning, but I love you even more!
-You're the goddess of my existence. Good morning.
-I love you more than you know. Good morning!
+VC_TAG = [ "**Good morning to you, my one and only.😜**",
+           "**I miss you, and I hope you’re having a wonderful morning.🤪**",
+           "**Have a wonderful day at work. You’re going to do great! 😃**",
+           "**Wake up sleeping beauty! 😴**",
+           "**Do you believe in love at first text?🤭**",
+           "**The sun rises with your smile.😗**",
+           "**Good morning, my love! ❣️**",
+           "**Good morning! How did you sleep? 💞**",
+           "**Let’s make today memorable.😑**",
+           "**Good morning, my timeless love! 😚**",
+           "**Morning, love! Just wanted to start your day with a smile.😙😺**",
+           "**Enjoy your day, sweetheart.👀**",
+           "**Today is a gift. Let’s cherish the present.😀**",
+           "**Good morning! How did you sleep? 😴**",
+           "**The early bird catches the worm! Good morning.😱**",
+           "**Have an amazing day! 🙏**",
+           "**Wishing you a successful day! 😊**",
+           "**Time to seize the day!**",
+           "**You have the power to make today incredible.😐**",
+           "**Rise and shine, my friend! 💥**",
+           "**I hope your day is filled with joy.😚**",
+           "**Every morning is a chance to start anew.🤾**",
+           "**I have a feeling today is going to be a great day.**",
+           "**Good morning, my love! 💓**",
+           "**Good morning! How did you sleep? ❤️**",
+           "**Let’s make today memorable.🤪**",
+           "**Good morning, my timeless love! 😘**",
+           "**love you even more! 😘**",
+           "**You're the goddess of my existence. Good morning.**",
+           "**I love you more than you know. Good morning! 🌞**",
         ]
 
 
