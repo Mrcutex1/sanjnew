@@ -14,7 +14,6 @@ ffmpeg-python
 gitpython
 hachoir
 Faker
-MukeshAPI
 pydub
 pycountry
 heroku3
@@ -40,6 +39,7 @@ emojis
 speedtest-cli
 spotipy
 tgcrypto
+MukeshAPI
 telegraph
 unidecode
 yt-dlp
