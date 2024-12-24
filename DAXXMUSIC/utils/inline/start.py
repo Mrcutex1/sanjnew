@@ -31,6 +31,6 @@ def private_panel(_):
         [
             InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper"),
         ],
-        [   InlineKeyboardButton(text="•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/tamilanexpresschat") ],
+        [   InlineKeyboardButton(text="•sᴜᴘᴘᴏʀᴛ•", url=f"https://t.me/blaze_bots_support") ],
     ]
     return buttons
