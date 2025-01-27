@@ -1,5 +1,4 @@
 from DAXXMUSIC import app
-from config import BOT_USERNAME
 from pyrogram import filters
 from DAXXMUSIC.utils.daxx_ban import admin_filter
 from DAXXMUSIC.mongo.notesdb import *
@@ -230,7 +229,7 @@ async def PrivateNoteButton(message, chat_id, NoteName):
     PrivateNoteButton = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text='Click me!', url=f'http://t.me/{BOT_USERNAME}?start=note_{chat_id}_{NoteName}')
+                InlineKeyboardButton(text='Click me!', url=f'http://t.me/{app.username}?start=note_{chat_id}_{NoteName}')
             ]
         ]
     )

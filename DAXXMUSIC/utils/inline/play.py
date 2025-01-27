@@ -1,5 +1,5 @@
 import math
-from config import SUPPORT_CHAT, OWNER_USERNAME
+from config import SUPPORT_CHAT
 from pyrogram.types import InlineKeyboardButton
 from DAXXMUSIC import app
 import config

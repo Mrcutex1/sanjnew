@@ -1,8 +1,7 @@
 from pyrogram import Client, filters
 from DAXXMUSIC import app
-from config import OWNER_ID, BOT_USERNAME
 from pyrogram.types import Message
-
+from config import OWNER_ID
 
 @app.on_message(filters.command(["post"], prefixes=["/", "."]) & filters.user(OWNER_ID))
 async def copy_messages(_, message):

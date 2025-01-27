@@ -1,13 +1,12 @@
 import base64
 import httpx
 import os
-from pyrogram import filters
-from config import BOT_USERNAME
+from pyrogram import filters, Client
 from DAXXMUSIC import app
 from pyrogram import filters
 import pyrogram
 from uuid import uuid4
-from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup, Message
 
 
 ######### sticker id
@@ -31,7 +30,7 @@ def generate_sticker(client, message):
 
 
 @app.on_message(filters.command("packkang"))
-async def _packkang(app :app,message):  
+async def _packkang(client:Client,message:Message):  
     txt = await message.reply_text("**ᴘʀᴏᴄᴇssɪɴɢ....**")
     if not message.reply_to_message:
         await txt.edit('ʀᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇ')
@@ -42,11 +41,11 @@ async def _packkang(app :app,message):
     if message.reply_to_message.sticker.is_animated or  message.reply_to_message.sticker.is_video:
         return await txt.edit("ʀᴇᴘʟʏ ᴛᴏ ᴀ ɴᴏɴ-ᴀɴɪᴍᴀᴛᴇᴅ sᴛɪᴄᴋᴇʀ")
     if len(message.command) < 2:
-        pack_name =  f'{message.from_user.first_name}_sticker_pack_by_@{BOT_USERNAME}'
+        pack_name =  f'{message.from_user.first_name}_sticker_pack_by_@{app.username}'
     else :
         pack_name = message.text.split(maxsplit=1)[1]
     short_name = message.reply_to_message.sticker.set_name
-    stickers = await app.invoke(
+    stickers = await client.invoke(
         pyrogram.raw.functions.messages.GetStickerSet(
             stickerset=pyrogram.raw.types.InputStickerSetShortName(
                 short_name=short_name),
@@ -86,7 +85,7 @@ async def _packkang(app :app,message):
 
 ###### sticker id =
 @app.on_message(filters.command(["stickerid","stid"]))
-async def sticker_id(app: app, msg):
+async def sticker_id(client, msg):
     if not msg.reply_to_message:
         await msg.reply_text("Reply to a sticker")        
     elif not msg.reply_to_message.sticker:
