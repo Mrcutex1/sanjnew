@@ -2,7 +2,7 @@ aiofiles
 bard
 pymongo==3.12.0
 SpeechRecognition
-pornhub-api==0.2.0
+pornhub-api==0.4.0
 aiohttp 
 asyncio 
 beautifulsoup4
