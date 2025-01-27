@@ -5,7 +5,7 @@ from search_engine_parser.core.engines.stackoverflow import \
     Search as StackSearch
 from search_engine_parser.core.exceptions import NoResultsFound, NoResultsOrTrafficError
 from DAXXMUSIC import app
-from pyrogram import filters
+from pyrogram import filters, Client
 
 
 
@@ -61,7 +61,7 @@ def btn(text, value, type="callback_data"):
 
 
 @app.on_message(filters.command('google'))
-async def search_(app: app, msg: Message):
+async def search_(client:Client, msg: Message):
     split = msg.text.split(None, 1)
     if len(split) == 1:
         return await msg.reply_text("**ɢɪᴠᴇ ǫᴜᴇʀʏ ᴛᴏ sᴇᴀʀᴄʜ\n│ \n└➻ ᴍᴀᴅᴇ ʙʏ ‿⃪ᷝ ⷨ༏⋆»͢ ⚡️𝆺𝅥⃝⍣𓄀꯭𝐒 ᴀ ɴ J ᴀ 𝐘𝆺𝅥𝀚𖽹͢𓂃𓂄🥵**")
@@ -130,7 +130,7 @@ async def search_(app: app, msg: Message):
 
 
 @app.on_message(filters.command('stack'))
-async def stack_search_(app: app, msg: Message):
+async def stack_search_(client: Client, msg: Message):
     split = msg.text.split(None, 1)
     if len(split) == 1:
         return await msg.reply_text("**ɢɪᴠᴇ ǫᴜᴇʀʏ ᴛᴏ sᴇᴀʀᴄʜ\n│ \n└➻ ᴍᴀᴅᴇ ʙʏ ‿⃪ᷝ ⷨ༏⋆»͢ ⚡️𝆺𝅥⃝⍣𓄀꯭𝐒 ᴀ ɴ J ᴀ 𝐘𝆺𝅥𝀚𖽹͢𓂃𓂄🥵**")

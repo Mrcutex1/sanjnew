@@ -1,5 +1,5 @@
 from asyncio import sleep
-from pyrogram import filters
+from pyrogram import filters, Client
 from pyrogram.enums import ChatType
 from pyrogram.errors import MessageDeleteForbidden, RPCError
 from pyrogram.types import Message
@@ -8,7 +8,7 @@ from DAXXMUSIC import app
 
 
 @app.on_message(filters.command("purge") & admin_filter)
-async def purge(app: app, msg: Message):
+async def purge(client: Client, msg: Message):
     
     if msg.chat.type != ChatType.SUPERGROUP:
         await msg.reply_text(text="**ɪ ᴄᴀɴ'ᴛ ᴘᴜʀɢᴇ ᴍᴇssᴀɢᴇs ɪɴ ᴀ ʙᴀsɪᴄ ɢʀᴏᴜᴘ ᴍᴀᴋᴇ sᴜᴘᴇʀ ɢʀᴏᴜᴘ.**")
@@ -48,7 +48,7 @@ async def purge(app: app, msg: Message):
 
 
 @app.on_message(filters.command("spurge") & admin_filter)
-async def spurge(app: app, msg: Message):
+async def spurge(client: Client, msg: Message):
 
     if msg.chat.type != ChatType.SUPERGROUP:
         await msg.reply_text(text="**ɪ ᴄᴀɴ'ᴛ ᴘᴜʀɢᴇ ᴍᴇssᴀɢᴇs ɪɴ ᴀ ʙᴀsɪᴄ ɢʀᴏᴜᴘ ᴍᴀᴋᴇ sᴜᴘᴇʀ ɢʀᴏᴜᴘ.**")
@@ -79,7 +79,7 @@ async def spurge(app: app, msg: Message):
 
 
 @app.on_message(filters.command("del") & admin_filter)
-async def del_msg(app: app, msg: Message):
+async def del_msg(client:Client, msg: Message):
     if msg.chat.type != ChatType.SUPERGROUP:
         await msg.reply_text(text="**ɪ ᴄᴀɴ'ᴛ ᴘᴜʀɢᴇ ᴍᴇssᴀɢᴇs ɪɴ ᴀ ʙᴀsɪᴄ ɢʀᴏᴜᴘ ᴍᴀᴋᴇ sᴜᴘᴇʀ ɢʀᴏᴜᴘ.**")
         return        

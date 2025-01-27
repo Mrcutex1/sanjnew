@@ -1,6 +1,7 @@
 from typing import Union
-from pyrogram import filters, types
-from pyrogram.types import InlineKeyboardMarkup, Message, InlineKeyboardButton
+from pyrogram import filters, Client
+from pyrogram.types import InlineKeyboardMarkup, Message, InlineKeyboardButton, CallbackQuery
+from pyrogram.enums import ParseMode
 from DAXXMUSIC import app
 from DAXXMUSIC.utils import help_pannel
 from DAXXMUSIC.utils.database import get_lang
@@ -14,9 +15,9 @@ from DAXXMUSIC.utils.stuffs.helper import Helper
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
 @app.on_callback_query(filters.regex("settings_back_helper") & ~BANNED_USERS)
 async def helper_private(
-    client: app, update: Union[types.Message, types.CallbackQuery]
+    client: Client, update: Union[Message, CallbackQuery]
 ):
-    is_callback = isinstance(update, types.CallbackQuery)
+    is_callback = isinstance(update, CallbackQuery)
     if is_callback:
         try:
             await update.answer()
@@ -95,9 +96,12 @@ async def helper_cb(client, CallbackQuery):
 
 
 @app.on_callback_query(filters.regex('managebot123'))
-async def on_back_button(client, CallbackQuery):
+async def on_back_button(client, CallbackQuery:CallbackQuery):
     callback_data = CallbackQuery.data.strip()
     cb = callback_data.split(None, 1)[1]
+    chat_id = CallbackQuery.message.chat.id
+    language = await get_lang(chat_id)
+    _ = get_string(language)
     keyboard = help_pannel(_, True)
     if cb == "settings_back_helper":
         await CallbackQuery.edit_message_text(
@@ -105,11 +109,11 @@ async def on_back_button(client, CallbackQuery):
         )
 
 @app.on_callback_query(filters.regex('mplus'))      
-async def mb_plugin_button(client, CallbackQuery):
+async def mb_plugin_button(client, CallbackQuery:CallbackQuery):
     callback_data = CallbackQuery.data.strip()
     cb = callback_data.split(None, 1)[1]
     keyboard = InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"mbot_cb")]])
     if cb == "Okieeeeee":
-        await CallbackQuery.edit_message_text(f"`something errors`",reply_markup=keyboard,parse_mode=enums.ParseMode.MARKDOWN)
+        await CallbackQuery.edit_message_text(f"`something errors`",reply_markup=keyboard,parse_mode=ParseMode.MARKDOWN)
     else:
         await CallbackQuery.edit_message_text(getattr(Helper, cb), reply_markup=keyboard)

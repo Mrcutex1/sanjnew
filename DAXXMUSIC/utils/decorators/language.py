@@ -1,7 +1,8 @@
 from DAXXMUSIC.misc import SUDOERS
 from DAXXMUSIC.utils.database import get_lang, is_maintenance
 from strings import get_string
-
+from DAXXMUSIC import app
+from config import SUPPORT_CHAT
 
 def language(mystic):
     async def wrapper(_, message, **kwargs):

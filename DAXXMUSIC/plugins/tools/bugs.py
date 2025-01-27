@@ -1,4 +1,5 @@
 from datetime import datetime
+from typing import Union
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
 from config import OWNER_ID as owner_id
@@ -6,7 +7,7 @@ from DAXXMUSIC import app
 
 
 
-def content(msg: Message) -> [None, str]:
+def content(msg: Message) -> Union[None, str]:
     text_to_return = msg.text
 
     if msg.text is None:

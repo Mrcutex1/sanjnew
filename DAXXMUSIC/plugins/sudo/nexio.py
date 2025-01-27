@@ -6,7 +6,8 @@ from pyrogram import *
 from pyrogram.types import *
 from DAXXMUSIC.utils.daxx_ban import admin_filter
 
-
+from pyrogram import filters, Client
+from pyrogram.types import Message
 
 
 
@@ -54,7 +55,7 @@ channel = ["channel"]
 
 
 @app.on_message(filters.command(["aby","aby"], prefixes=["b", "B"]) & admin_filter)
-async def restriction_app(app :app, message):
+async def restriction_app(client :Client, message:Message):
     reply = message.reply_to_message
     chat_id = message.chat.id
     if len(message.text) < 2:
