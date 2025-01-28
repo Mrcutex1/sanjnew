@@ -1,6 +1,6 @@
 aiofiles
 bard
-pymongo==3.12.0
+pymongo==4.11
 SpeechRecognition
 pornhub-api==0.2.0
 aiohttp 
